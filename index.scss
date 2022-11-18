@@ -1,0 +1,61 @@
+@mixin ringStyle ($thick, $size, $colour, $shadowColour) {
+    border-radius: 50%;
+    border: $thick solid $colour;
+    width: $size;
+    height: $size;
+    box-shadow: $size/20 $size/30 $size/30 $shadowColour;
+}
+
+
+
+body {
+    h1 {
+        display: inline-block;
+    }
+
+    p {
+        @include ringStyle(10px, 100px, red, yellow);
+        display: inline-block;
+    }
+
+    p:nth-child(1) {
+        display: block;
+    }
+
+    div {
+        @include ringStyle(2px, 50px, red, none);
+        display: inline-block;
+    }
+
+    #oneRing {
+
+        @include ringStyle(10px, 150px, yellow, orange);
+
+    }
+
+    .ringLoop {
+        @include ringStyle(5px, 200px, black, black);
+    }
+
+    section {
+        margin-left: 30%;
+    }
+
+}
+
+@for $i from 1 to 10 {
+
+    .ringLoop:nth-child(#{$i}) {
+
+        margin-left: -60px;
+        height: $i*30 + px;
+        width: $i*30 + px;
+        vertical-align: middle;
+    }
+
+}
+
+.ringLoop:nth-child(1),
+.ringLoop:nth-child(2) {
+    display: none;
+}
