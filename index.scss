@@ -9,9 +9,10 @@
 
 
 body {
-    h1 {
-        display: inline-block;
-    }
+    .preciousFirstRing {
+            display: flex;
+            margin: 3rem;
+        }
 
     p {
         @include ringStyle(10px, 100px, red, yellow);
@@ -22,12 +23,12 @@ body {
         display: block;
     }
 
-    div {
-        @include ringStyle(2px, 50px, red, none);
+    .firstRing {
+        @include ringStyle(5px, 50px, rgb(255, 72, 0), none);
         display: inline-block;
     }
 
-    #oneRing {
+    .oneRing {
 
         @include ringStyle(10px, 150px, yellow, orange);
 

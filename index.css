@@ -1,5 +1,15 @@
-body h1 {
-    display: inline-block;
+body {
+    background-color: rgb(231, 230, 230);
+}
+
+.precious {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preciousFirstRing {
+    display: flex;
+    margin: 3rem;
 }
 
 body p {
@@ -15,16 +25,16 @@ body p:nth-child(1) {
     display: block;
 }
 
-body div {
+.firstRing {
     border-radius: 50%;
-    border: 2px solid red;
+    border: 5px solid rgb(255, 72, 0);
     width: 50px;
     height: 50px;
     box-shadow: 2.5px 1.6666666667px 1.6666666667px none;
     display: inline-block;
 }
 
-body #oneRing {
+.oneRing {
     border-radius: 50%;
     border: 10px solid yellow;
     width: 150px;
@@ -32,7 +42,7 @@ body #oneRing {
     box-shadow: 7.5px 5px 5px orange;
 }
 
-body .ringLoop {
+.ringLoop {
     border-radius: 50%;
     border: 5px solid black;
     width: 200px;
@@ -40,7 +50,7 @@ body .ringLoop {
     box-shadow: 10px 6.6666666667px 6.6666666667px black;
 }
 
-body section {
+section {
     margin-left: 30%;
 }
 
@@ -90,20 +100,6 @@ body section {
     margin-left: -60px;
     height: 210px;
     width: 210px;
-    vertical-align: middle;
-}
-
-.ringLoop:nth-child(8) {
-    margin-left: -60px;
-    height: 240px;
-    width: 240px;
-    vertical-align: middle;
-}
-
-.ringLoop:nth-child(9) {
-    margin-left: -60px;
-    height: 270px;
-    width: 270px;
     vertical-align: middle;
 }
 
